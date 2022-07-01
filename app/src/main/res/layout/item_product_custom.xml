@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.chauthai.swipereveallayout.SwipeRevealLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:id="@+id/swipe_reveallayout"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:mode="same_level"
+    app:dragEdge="right">
+    <LinearLayout
+        android:id="@+id/layout_function"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <Button
+            android:id="@+id/bt_update_product"
+            android:text="Update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"/>
+        <Button
+            android:id="@+id/bt_delete_product"
+            android:text="Delete"
+            android:layout_marginRight="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout_product"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_gravity="center"
+            android:id="@+id/tv_name_product"
+            android:textSize="18sp"
+            android:text="Vũ Đức Cường"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    
+</com.chauthai.swipereveallayout.SwipeRevealLayout>
